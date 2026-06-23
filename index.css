@@ -1,0 +1,31 @@
+body { 
+    padding: 0;
+    width: 600px;
+    display: block;
+    margin: auto;
+    font-family: "Smythe" , sans-serif;
+} 
+
+
+/* header */
+.header-container {
+    background-image: url('/images/burger.png');
+    background-size: cover;
+    height: 167px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 46px;
+}
+
+
+.header-title {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.header-subtitle {
+    margin-top: 8px;
+    padding-top: 0;
+} 
