@@ -28,4 +28,72 @@ body {
 .header-subtitle {
     margin-top: 8px;
     padding-top: 0;
+    font-weight: 100;
+    word-spacing: 2px;
 } 
+
+/* main */
+.main-container {
+ margin-top: 35px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 508px;
+    height: 140px;
+    border-bottom: 1px solid #DEDEDE;
+    margin: 35px 0;
+    padding-bottom: 20px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 34px;
+}
+
+.item-info h2, p {
+    margin: 0;
+}
+
+.item-info h2 {
+ font-size: 1.75rem;
+ font-weight: 100;
+}
+
+ .indgredients {
+    font-size: 1rem;
+    color: #8B8B8B;
+}
+
+ .price {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-top: 4px;
+}
+
+#info-button {
+    margin-left: auto;
+    margin-bottom: 35px;
+}
+
+#info-button button{
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-family: inter;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: 6px;
+
+}
+
+.menu-emoji {
+    font-size: 4.875rem;
+    margin: 0;
+}
