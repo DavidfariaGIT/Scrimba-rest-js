@@ -6,6 +6,9 @@ const cartItemName = document.getElementById('cart-item-name');
 const cartPrice = document.getElementById('cart-price');
 const cart = document.querySelector('.cart');
 const totalPriceEl = document.getElementById('total-price');
+const cartBtn = document.querySelector('.cart-btn');
+const form = document.getElementById("form");
+const module = document.querySelector('.module-container');
 
 function dataArray() {
   for (const { name, ingredients, id, price, emoji } of menuArray) {
@@ -49,6 +52,23 @@ const totalPrice = cartArray.reduce((acc, el) => {
 
 renderPrice(totalPrice);
 });
+
+cartBtn.addEventListener(('click'), (e) => {
+  module.style.display = "flex";
+})
+
+form.addEventListener(('submit'), (e) => {
+  e.preventDefault();
+  module.style.display = "none";
+
+  const orderCompleteMsg = `
+    <div class="order-msg">
+    <p id="order-txt">Thanks, Audrey! Your order is on its way!</p>
+    </div>
+  `
+
+  cartContainer.innerHTML = orderCompleteMsg
+})
 
 window.addEventListener(('click'), (e) => {
   if (e.target.className === 'remove-button') {
